@@ -65,11 +65,11 @@ namespace AutomacaoFuncional.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate Menu Itens")]
+        [NUnit.Framework.DescriptionAttribute("Access Page")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void ValidateMenuItens()
+        public virtual void AccessPage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Menu Itens", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Access Page", new string[] {
                         "mytag"});
 #line 9
 this.ScenarioSetup(scenarioInfo);

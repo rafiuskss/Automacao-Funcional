@@ -6,6 +6,6 @@
 	 Default: Chrome
 
 @mytag
-Scenario: Validate Menu Itens
+Scenario: Access Page
 	Given Access to page "https://material.angular.io/components/categories"		
 	Then Page loaded with sucess
