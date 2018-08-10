@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace AutomacaoFuncional.tests.pages
 {
-    //Teste
     class AccessElementsMap
     {
 
