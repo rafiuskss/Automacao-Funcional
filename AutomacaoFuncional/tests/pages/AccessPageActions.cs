@@ -18,8 +18,16 @@ namespace AutomacaoFuncional.tests.pages
         }
 
         public void AccessPage(string url)
-        {           
-            ClassDriver.GetInstance().Driver.Navigate().GoToUrl(url);
+        {
+            try
+            {
+                ClassDriver.GetInstance().Driver.Navigate().GoToUrl(url);
+            }
+            catch (Exception)
+            {
+
+            }
+            
         }
 
         public bool ValidAccessPage()
@@ -38,7 +46,7 @@ namespace AutomacaoFuncional.tests.pages
             }
             catch (Exception)
             {
-
+                ClassInfo.GetInstance().LogMessage = "Error accessing the page";
             }
             return _result;
         }

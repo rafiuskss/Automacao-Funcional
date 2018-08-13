@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AutomacaoFuncional</RootNamespace>
     <AssemblyName>AutomacaoFuncional</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -19,6 +19,7 @@
     <TestProjectType>UnitTest</TestProjectType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -86,14 +87,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tests\pages\AccessElementsMap.cs" />
     <Compile Include="tests\pages\AccessPageActions.cs" />
+    <Compile Include="tests\pages\FormControlsElementsMap.cs" />
+    <Compile Include="tests\pages\FormControlsPageActions.cs" />
     <Compile Include="tests\pages\MenuPageActions.cs" />
     <Compile Include="tests\steps\AccessSteps.cs" />
+    <Compile Include="tests\steps\FormControlsSteps.cs" />
+    <Compile Include="tests\steps\MenusSteps.cs" />
     <Compile Include="tests\steps\ScopeFeatures.cs" />
     <Compile Include="tests\utils\ClassDriver.cs" />
+    <Compile Include="tests\utils\ClassInfo.cs" />
     <Compile Include="tests\utils\ClassUtilities.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="features\FunctionalTestFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FunctionalTestFeature.feature.cs</LastGenOutput>

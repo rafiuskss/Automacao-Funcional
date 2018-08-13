@@ -10,7 +10,6 @@ namespace AutomacaoFuncional.tests.pages
 {
     class AccessElementsMap
     {
-
         [FindsBy(How = How.ClassName, Using = "docs-navbar-header")]
         [CacheLookup]
         public IWebElement menuHeaderHome { get; set; }

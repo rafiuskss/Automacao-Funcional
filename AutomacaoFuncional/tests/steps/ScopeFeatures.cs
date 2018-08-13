@@ -1,4 +1,5 @@
 ﻿using AutomacaoFuncional.tests.utils;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace AutomacaoFuncional.tests.steps
         [BeforeFeature]
         public static void BeforeFeature(FeatureInfo featureInfo)
         {
-            int typeBrowser = Int32.Parse(featureInfo.Title.Split('-')[0]);
+            string typeBrowser = featureInfo.Title.Contains("-") ? featureInfo.Title.Split('-')[0] : null;
             ClassDriver.GetInstance().StartDriver(typeBrowser);
         }
 
@@ -42,13 +43,13 @@ namespace AutomacaoFuncional.tests.steps
         [AfterStep]
         public static void AfterStep()
         {
-
+            
         }
 
         [AfterScenario]
         public static void AfterScenario()
         {
-
+            Assert.True(ClassInfo.GetInstance().ResultScenario, ClassInfo.GetInstance().LogMessage, null);
         }
 
         [AfterFeature]

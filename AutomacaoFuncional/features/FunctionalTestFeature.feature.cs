@@ -18,8 +18,8 @@ namespace AutomacaoFuncional.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("2-FunctionalTestFeature")]
-    public partial class _2_FunctionalTestFeatureFeature
+    [NUnit.Framework.DescriptionAttribute("FunctionalTestFeature")]
+    public partial class FunctionalTestFeatureFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,8 +31,8 @@ namespace AutomacaoFuncional.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "2-FunctionalTestFeature", "\tUse before title fiture separed with \"-\":\r\n\t 0 for Chrome;\r\n\t 1 for Internet Exp" +
-                    "lorer;\r\n\t 2 for FireFox Mozilla;\r\n\t Default: Chrome", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "FunctionalTestFeature", "\tUse before title fiture separed with \"-\":\r\n\t \'C\' for Chrome;\r\n\t \'I\' for Internet" +
+                    " Explorer;\r\n\t \'F\' for FireFox Mozilla;\r\n\t Default: Chrome", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,17 +66,36 @@ namespace AutomacaoFuncional.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Access Page")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("AcessPage")]
         public virtual void AccessPage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Access Page", new string[] {
-                        "mytag"});
+                        "AcessPage"});
 #line 9
 this.ScenarioSetup(scenarioInfo);
 #line 10
  testRunner.Given("Access to page \"https://material.angular.io/components/categories\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
  testRunner.Then("Page loaded with sucess", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Form Controls Validate")]
+        [NUnit.Framework.CategoryAttribute("Menu")]
+        public virtual void FormControlsValidate()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Validate", new string[] {
+                        "Menu"});
+#line 14
+this.ScenarioSetup(scenarioInfo);
+#line 15
+testRunner.Given("Access the menu \"Form Controls > Autocomplete\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+testRunner.When("I typed the letter \"T\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 17
+testRunner.Then("\"2\" options were displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

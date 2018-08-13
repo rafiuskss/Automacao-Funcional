@@ -1,9 +1,11 @@
 ﻿using AutomacaoFuncional.tests.pages;
+using AutomacaoFuncional.tests.utils;
 using System;
 using TechTalk.SpecFlow;
 
 namespace AutomacaoFuncional.tests.steps
 {
+    //teste
     [Binding]
     public class AccessSteps
     {
@@ -20,7 +22,7 @@ namespace AutomacaoFuncional.tests.steps
         [Then(@"Page loaded with sucess")]
         public void ThenPageLoadedWithSucess()
         {
-            pageAction.ValidAccessPage();
+            ClassInfo.GetInstance().ResultScenario = pageAction.ValidAccessPage();
         }
     }
 }

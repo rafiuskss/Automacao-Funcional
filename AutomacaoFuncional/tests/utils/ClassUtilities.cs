@@ -37,7 +37,7 @@ namespace AutomacaoFuncional.tests.utils
         {
             try
             {
-                ScrollElementoPage(ClassDriver.GetInstance().Driver, locator, 10);
+                ScrollElementoPage(locator);
                 Point point = new Point();
                 //#00FF00
 
@@ -59,7 +59,7 @@ namespace AutomacaoFuncional.tests.utils
 
         }
 
-        public void ScrollElementoPage(IWebDriver driver, IWebElement element, int space)
+        public void ScrollElementoPage(IWebElement element)
         {
             try
             {
@@ -69,16 +69,15 @@ namespace AutomacaoFuncional.tests.utils
                 if (element != null)
                 {
                     point = element.Location;
-                    IJavaScriptExecutor js = driver as IJavaScriptExecutor;
+                    IJavaScriptExecutor js = ClassDriver.GetInstance().Driver as IJavaScriptExecutor;
 
                     js.ExecuteScript("arguments[0].scrollIntoView(true);", element);
-                    //js.ExecuteScript("window.scrollBy(0," + (point.Y - space) + ");");
+                    //js.ExecuteScript("window.scrollBy(" + (point.Y - space) + ");");
 
                 }
             }
             catch (Exception)
-            {
-                // TODO: handle exception
+            {              
             }
         }
 

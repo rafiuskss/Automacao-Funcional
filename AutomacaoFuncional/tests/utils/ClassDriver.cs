@@ -43,19 +43,19 @@ namespace AutomacaoFuncional.tests.utils
             return classDriver;
         }
 
-        public void StartDriver(int typeBrowser)
+        public void StartDriver(string typeBrowser)
         {
             switch (typeBrowser)
             {
-                case 0:
+                case "C":
                     Driver = new ChromeDriver();
                     break;
 
-                case 1:
+                case "I":
                     Driver = new InternetExplorerDriver();
                     break;
 
-                case 2:                                     
+                case "M":                                     
                     Driver = new FirefoxDriver();
                     break;
 
