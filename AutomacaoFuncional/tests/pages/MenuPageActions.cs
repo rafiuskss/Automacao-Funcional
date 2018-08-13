@@ -10,43 +10,48 @@ namespace AutomacaoFuncional.tests.pages
 {
     class MenuPageActions
     {
-        public bool AccessMenu(string menuName)
+        public void AccessMenu(string menuName)
         {
-            bool _result = false;
             try
             {
-                string argMenu = menuName.Split('>')[0].Trim();
-                string argSubMenu = menuName.Contains(">") ? menuName.Split('>')[1].Trim() : null;
 
-                IWebElement menu = ClassDriver.GetInstance().Driver.FindElement(By.XPath("//div[@class='docs-component-category-list']//a//mat-card-title[text()='" + argMenu + "']"));
+                IWebElement menu = ClassDriver.GetInstance().Driver.FindElement(By.XPath("//button[@class='docs-nav-content-btn' and text()='" + menuName + "']"));
 
                 if (menu.Displayed && menu.Enabled)
                 {
                     new ClassUtilities().HigthLine(menu);
                     menu.Click();
-
-                    if (argSubMenu != null)
+                    
+                    if (menu.GetAttribute("aria-expanded").Equals("false"))
                     {
-                        IWebElement subMenu = ClassDriver.GetInstance().Driver.FindElement(By.XPath("//mat-card-title[@class='docs-component-list-card-title mat-card-title' and text()='" + argSubMenu + "']"));
-
-                        if (subMenu.Displayed && subMenu.Enabled)
-                        {
-                            new ClassUtilities().HigthLine(subMenu);
-                            subMenu.Click();
-
-                        }
+                        menu.Click();
                     }
-
-                    _result = true;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                ClassInfo.GetInstance().LogMessage = "Menu or SubMenu:" + menuName + "not visible or enable.";
+                ClassInfo.GetInstance().LogMessage = "Menu:" + menuName + "not visible or enable.";
             }
-            return _result;
         }
+      
+        public void AccessSubMenu(string subMenuName)
+        {
 
+            try
+            {
+                IWebElement subMenu = ClassDriver.GetInstance().Driver.FindElement(By.XPath("//a[@class='ng-tns-c12-2' and text()='" + subMenuName + "']"));
 
+                if (subMenu.Displayed && subMenu.Enabled)
+                {
+                    new ClassUtilities().HigthLine(subMenu);
+                    subMenu.Click();
+
+                }
+            }
+            catch (Exception)
+            {
+                ClassInfo.GetInstance().LogMessage = "Menu or SubMenu:" + subMenuName + "not visible or enable.";
+            }
+        }
     }
 }

@@ -82,20 +82,85 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Form Controls Validate")]
-        [NUnit.Framework.CategoryAttribute("Menu")]
-        public virtual void FormControlsValidate()
+        [NUnit.Framework.DescriptionAttribute("Form Controls Autocomplete")]
+        [NUnit.Framework.CategoryAttribute("Form_Controls")]
+        public virtual void FormControlsAutocomplete()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Validate", new string[] {
-                        "Menu"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Autocomplete", new string[] {
+                        "Form_Controls"});
 #line 14
 this.ScenarioSetup(scenarioInfo);
 #line 15
-testRunner.Given("Access the menu \"Form Controls > Autocomplete\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 16
-testRunner.When("I typed the letter \"T\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Autocomplete \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 17
+testRunner.When("I typed the letter \"T\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
 testRunner.Then("\"2\" options were displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Form Controls Datepicker")]
+        [NUnit.Framework.CategoryAttribute("Form_Controls")]
+        public virtual void FormControlsDatepicker()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Datepicker", new string[] {
+                        "Form_Controls"});
+#line 22
+this.ScenarioSetup(scenarioInfo);
+#line 23
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 24
+testRunner.And("Access the submenu \" Datepicker \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 25
+testRunner.When("Clicked on the calendar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 26
+testRunner.Then("Calendar opened successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Form Controls Input")]
+        [NUnit.Framework.CategoryAttribute("Form_Controls")]
+        public virtual void FormControlsInput()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Input", new string[] {
+                        "Form_Controls"});
+#line 30
+this.ScenarioSetup(scenarioInfo);
+#line 31
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 32
+testRunner.And("Access the submenu \" Input \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 33
+testRunner.When("I entered a valid email \"automacao@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 34
+testRunner.Then("Validated email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Form Controls Select")]
+        [NUnit.Framework.CategoryAttribute("Form_Controls")]
+        public virtual void FormControlsSelect()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Select", new string[] {
+                        "Form_Controls"});
+#line 38
+this.ScenarioSetup(scenarioInfo);
+#line 39
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 40
+testRunner.And("Access the submenu \" Select \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 41
+testRunner.When("I select the option \"Option 2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 42
+testRunner.Then("Valid the option selected \"option2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

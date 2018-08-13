@@ -8,11 +8,19 @@ namespace AutomacaoFuncional.tests.steps
     [Binding]
     public class MenusSteps
     {
+        private MenuPageActions pageActions = new MenuPageActions();
         [Given(@"Access the menu ""(.*)""")]
         public void GivenAccessTheMenu(string arg)
         {
-            ClassInfo.GetInstance().ResultScenario = new MenuPageActions().AccessMenu(arg);
+            pageActions.AccessMenu(arg);
         }
-       
+        
+
+        [Given(@"Access the submenu ""(.*)""")]
+        public void GivenAccessTheSubmenu(string arg)
+        {
+            pageActions.AccessSubMenu(arg);
+        }
+
     }
 }

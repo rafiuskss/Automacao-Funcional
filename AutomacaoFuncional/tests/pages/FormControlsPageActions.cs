@@ -1,4 +1,5 @@
 ﻿using AutomacaoFuncional.tests.utils;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -22,15 +23,93 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
+                util.WaitForElementVisible(autocompleteInput, 5);
                 util.ScrollElementoPage(autocompleteInput);
                 autocompleteInput.Click();               
                 autocompleteInput.SendKeys(arg);
                 util.WaitForElementVisible(autocompleteOptions[0],5);
+                Thread.Sleep(1000);
             }
             catch (Exception)
             {
             
             }
+        }       
+
+        public void InsertEmail(string arg)
+        {
+            try
+            {
+                util.WaitForElementVisible(inputEmail, 10);
+                util.ScrollElementoPage(inputEmail);
+                inputEmail.Click();
+                inputEmail.SendKeys(arg);
+                Thread.Sleep(2000);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        public void OpenCalendar()
+        {
+            try
+            {
+                util.WaitForElementVisible(buttonOpenCalendar, 5);
+                if (buttonOpenCalendar.Enabled && buttonOpenCalendar.Displayed)
+                {
+                    util.HigthLine(buttonOpenCalendar);
+                    buttonOpenCalendar.Click();
+                    Thread.Sleep(1000);
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        public void SelectIten(string arg)
+        {
+            try
+            {
+                util.WaitForElementVisible(fieldSelect, 10);
+                fieldSelect.Click();
+                Thread.Sleep(500);
+                ClassDriver.GetInstance().Driver.FindElement(By.XPath("//span(@class='mat-option-text' and text()='" + arg + "')")).Click();
+                util.HigthLine(fieldSelect);
+                Thread.Sleep(1000);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        public bool ValidCalendar()
+        {
+            bool _result = false;
+            try
+            {
+                 if(calendarPicker.Enabled && calendarPicker.Displayed)
+                {
+                    util.HigthLine(calendarPicker);
+                    Thread.Sleep(1000);
+                    ClassDriver.GetInstance().Driver.FindElement(By.XPath("//div[@class='mat-calendar-body-cell-content' and text()='" + DateTime.Now.AddDays(-1).ToString("dd") + "']")).Click();                    
+                    _result = true;
+                }
+                else
+                {
+                    ClassInfo.GetInstance().LogMessage = "Calendar not opened";
+                }
+            }
+            catch (Exception)
+            {
+                ClassInfo.GetInstance().LogMessage = "Error on validate";
+            }
+
+            return _result;
         }
 
         public bool ValidAutocomplete(int arg)
@@ -45,7 +124,7 @@ namespace AutomacaoFuncional.tests.pages
                 else
                 {
                     ClassInfo.GetInstance().LogMessage = "Options returned invalids";
-                }                               
+                }
 
             }
             catch (Exception)
@@ -54,6 +133,58 @@ namespace AutomacaoFuncional.tests.pages
             }
 
             return _return;
+        }
+
+        public bool ValidInsertEmail()
+        {
+            bool _result = false;
+            try
+            {
+                if (inputEmail.Enabled && inputEmail.Displayed)
+                {
+                    util.HigthLine(inputEmail);
+
+                    try
+                    {
+                        if (alertErrorEmail.Enabled && alertErrorEmail.Displayed)
+                        {
+                            ClassInfo.GetInstance().LogMessage = alertErrorEmail.Text;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        _result = true;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                ClassInfo.GetInstance().LogMessage = "Error on validate";
+            }
+            return _result;
+        }
+
+        public bool ValidSelect(string arg)
+        {
+            bool _result = false;
+            try
+            {
+
+                if (optionSelected.Text.Contains(arg))
+                {
+                    _result = true;
+                }
+                else
+                {
+                    ClassInfo.GetInstance().LogMessage = "Option selected:" + optionSelected.Text.Split(':')[1] + " Option expected:" + arg;
+                }
+
+            }
+            catch (Exception)
+            {
+                ClassInfo.GetInstance().LogMessage = "Error on validate";
+            }
+            return _result;
         }
 
     }
