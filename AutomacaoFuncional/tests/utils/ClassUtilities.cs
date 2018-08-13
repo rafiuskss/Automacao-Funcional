@@ -31,31 +31,6 @@ namespace AutomacaoFuncional.tests.utils
             } while (count < timeoutSecond * 4);
 
             return false;
-        }
-
-        public void HigthLine(IWebElement locator)
-        {
-            try
-            {
-                ScrollElementoPage(locator);
-                Point point = new Point();
-                //#00FF00
-
-                if (locator != null)
-                {
-                    point = locator.Location;
-                    IJavaScriptExecutor js = ClassDriver.GetInstance().Driver as IJavaScriptExecutor;
-
-                    js.ExecuteScript("window.scrollBy(0," + (point.Y - 10) + ");");
-                    js.ExecuteScript("arguments[0].scrollIntoView(true);", locator);
-
-                }
-                IJavaScriptExecutor javaScriptExecutor = (IJavaScriptExecutor)ClassDriver.GetInstance().Driver;
-                javaScriptExecutor.ExecuteScript("arguments[0].setAttribute('style', arguments[1]);",
-                locator, "outline: 4px solid #00FF00;");
-
-            }
-            catch (Exception) { }
 
         }
 
@@ -77,9 +52,36 @@ namespace AutomacaoFuncional.tests.utils
                 }
             }
             catch (Exception)
-            {              
+            {
             }
         }
 
+        public void SendKeyJS(IWebElement element, string value)
+        {
+            try
+            {
+                IJavaScriptExecutor js = ClassDriver.GetInstance().Driver as IJavaScriptExecutor;
+                js.ExecuteScript("arguments[0].setAttribute('value', '" + value + "')", element);
+            }
+            catch (Exception)
+            {
+
+            }
+           
+        }
+
+        public void ClickJS(IWebElement element)
+        {
+            try
+            {
+                IJavaScriptExecutor js = ClassDriver.GetInstance().Driver as IJavaScriptExecutor;
+                js.ExecuteScript("arguments[0].Click()", element);
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }
     }
 }

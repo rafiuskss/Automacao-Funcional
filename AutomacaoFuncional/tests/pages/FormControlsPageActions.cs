@@ -24,7 +24,7 @@ namespace AutomacaoFuncional.tests.pages
             try
             {
                 util.WaitForElementVisible(autocompleteInput, 5);
-                util.ScrollElementoPage(autocompleteInput);
+                util.ScrollElementoPage(divAutocomplete);
                 autocompleteInput.Click();               
                 autocompleteInput.SendKeys(arg);
                 util.WaitForElementVisible(autocompleteOptions[0],5);
@@ -58,8 +58,7 @@ namespace AutomacaoFuncional.tests.pages
             {
                 util.WaitForElementVisible(buttonOpenCalendar, 5);
                 if (buttonOpenCalendar.Enabled && buttonOpenCalendar.Displayed)
-                {
-                    util.HigthLine(buttonOpenCalendar);
+                {                    
                     buttonOpenCalendar.Click();
                     Thread.Sleep(1000);
                 }
@@ -77,8 +76,7 @@ namespace AutomacaoFuncional.tests.pages
                 util.WaitForElementVisible(fieldSelect, 10);
                 fieldSelect.Click();
                 Thread.Sleep(500);
-                ClassDriver.GetInstance().Driver.FindElement(By.XPath("//span(@class='mat-option-text' and text()='" + arg + "')")).Click();
-                util.HigthLine(fieldSelect);
+                ClassDriver.GetInstance().Driver.FindElement(By.XPath("//span(@class='mat-option-text' and text()='" + arg + "')")).Click();               
                 Thread.Sleep(1000);
             }
             catch (Exception)
@@ -93,8 +91,7 @@ namespace AutomacaoFuncional.tests.pages
             try
             {
                  if(calendarPicker.Enabled && calendarPicker.Displayed)
-                {
-                    util.HigthLine(calendarPicker);
+                {                    
                     Thread.Sleep(1000);
                     ClassDriver.GetInstance().Driver.FindElement(By.XPath("//div[@class='mat-calendar-body-cell-content' and text()='" + DateTime.Now.AddDays(-1).ToString("dd") + "']")).Click();                    
                     _result = true;
@@ -141,8 +138,7 @@ namespace AutomacaoFuncional.tests.pages
             try
             {
                 if (inputEmail.Enabled && inputEmail.Displayed)
-                {
-                    util.HigthLine(inputEmail);
+                {                    
 
                     try
                     {

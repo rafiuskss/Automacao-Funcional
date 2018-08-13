@@ -13,9 +13,14 @@ namespace AutomacaoFuncional.tests.pages
         [FindsBy(How = How.ClassName, Using = "mat-option-text")]
         [CacheLookup]
         public IList<IWebElement> autocompleteOptions { get; set; }
+       
+
+        [FindsBy(How = How.XPath, Using = "//div[@class='autocomplete-filter'")]
+        [CacheLookup]
+        public IWebElement divAutocomplete { get; set; }
 
 
-        [FindsBy(How = How.Id, Using = "mat-input-1")]
+        [FindsBy(How = How.XPath, Using = "//div[@class='docs-example-viewer-title-spacer' and text()='Filter autocomplete']/../..//input")]
         [CacheLookup]
         public IWebElement autocompleteInput { get; set; }
 

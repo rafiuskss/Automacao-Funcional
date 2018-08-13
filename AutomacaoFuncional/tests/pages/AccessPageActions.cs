@@ -39,8 +39,7 @@ namespace AutomacaoFuncional.tests.pages
                 util.WaitForElementVisible(menuHeaderHome, 10);
 
                 if (menuHeaderHome.Enabled && menuHeaderHome.Displayed)
-                {
-                    util.HigthLine(menuHeaderHome);
+                {                   
                     _result = true;
                 }               
             }

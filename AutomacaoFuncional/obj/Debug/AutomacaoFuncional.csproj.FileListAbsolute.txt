@@ -36,4 +36,3 @@ C:\Users\Rafael Recalcatti\Source\Repos\Automacao-Funcional\AutomacaoFuncional\b
 C:\Users\Rafael Recalcatti\Source\Repos\Automacao-Funcional\AutomacaoFuncional\obj\Debug\AutomacaoFuncional.csproj.CoreCompileInputs.cache
 C:\Users\Rafael Recalcatti\Source\Repos\Automacao-Funcional\AutomacaoFuncional\obj\Debug\AutomacaoFuncional.dll
 C:\Users\Rafael Recalcatti\Source\Repos\Automacao-Funcional\AutomacaoFuncional\obj\Debug\AutomacaoFuncional.pdb
-C:\Users\Rafael Recalcatti\Source\Repos\Automacao-Funcional\AutomacaoFuncional\obj\Debug\AutomacaoFuncional.csprojResolveAssemblyReference.cache

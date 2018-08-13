@@ -18,9 +18,9 @@ namespace AutomacaoFuncional.tests.pages
                 IWebElement menu = ClassDriver.GetInstance().Driver.FindElement(By.XPath("//button[@class='docs-nav-content-btn' and text()='" + menuName + "']"));
 
                 if (menu.Displayed && menu.Enabled)
-                {
-                    new ClassUtilities().HigthLine(menu);
-                    menu.Click();
+                {      
+                    
+                    menu.Click(); 
                     
                     if (menu.GetAttribute("aria-expanded").Equals("false"))
                     {
@@ -42,10 +42,8 @@ namespace AutomacaoFuncional.tests.pages
                 IWebElement subMenu = ClassDriver.GetInstance().Driver.FindElement(By.XPath("//a[@class='ng-tns-c12-2' and text()='" + subMenuName + "']"));
 
                 if (subMenu.Displayed && subMenu.Enabled)
-                {
-                    new ClassUtilities().HigthLine(subMenu);
-                    subMenu.Click();
-
+                {                   
+                    subMenu.Click();                
                 }
             }
             catch (Exception)

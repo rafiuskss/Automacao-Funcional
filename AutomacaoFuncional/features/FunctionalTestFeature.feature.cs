@@ -18,8 +18,8 @@ namespace AutomacaoFuncional.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("FunctionalTestFeature")]
-    public partial class FunctionalTestFeatureFeature
+    [NUnit.Framework.DescriptionAttribute("I-FunctionalTestFeature")]
+    public partial class I_FunctionalTestFeatureFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,8 +31,8 @@ namespace AutomacaoFuncional.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "FunctionalTestFeature", "\tUse before title fiture separed with \"-\":\r\n\t \'C\' for Chrome;\r\n\t \'I\' for Internet" +
-                    " Explorer;\r\n\t \'F\' for FireFox Mozilla;\r\n\t Default: Chrome", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "I-FunctionalTestFeature", "\tUse before title fiture separed with \"-\":\r\n\t \'C\' for Chrome;\r\n\t \'I\' for Internet" +
+                    " Explorer;\r\n\t \'F\' for FireFox Mozilla;\r\n\t \'E\' for Edge;\r\n\t Default: Chrome", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -71,11 +71,11 @@ namespace AutomacaoFuncional.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Access Page", new string[] {
                         "AcessPage"});
-#line 9
-this.ScenarioSetup(scenarioInfo);
 #line 10
- testRunner.Given("Access to page \"https://material.angular.io/components/categories\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 11
+ testRunner.Given("Access to page \"https://material.angular.io/components/categories\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 12
  testRunner.Then("Page loaded with sucess", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -88,15 +88,15 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Autocomplete", new string[] {
                         "Form_Controls"});
-#line 14
-this.ScenarioSetup(scenarioInfo);
 #line 15
-testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 16
-testRunner.And("Access the submenu \" Autocomplete \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 17
-testRunner.When("I typed the letter \"T\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Autocomplete \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 18
+testRunner.When("I typed the letter \"T\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 19
 testRunner.Then("\"2\" options were displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -109,15 +109,15 @@ testRunner.Then("\"2\" options were displayed", ((string)(null)), ((TechTalk.Spe
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Datepicker", new string[] {
                         "Form_Controls"});
-#line 22
-this.ScenarioSetup(scenarioInfo);
 #line 23
-testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 24
-testRunner.And("Access the submenu \" Datepicker \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 25
-testRunner.When("Clicked on the calendar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Datepicker \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 26
+testRunner.When("Clicked on the calendar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 27
 testRunner.Then("Calendar opened successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -130,15 +130,15 @@ testRunner.Then("Calendar opened successfully", ((string)(null)), ((TechTalk.Spe
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Input", new string[] {
                         "Form_Controls"});
-#line 30
-this.ScenarioSetup(scenarioInfo);
 #line 31
-testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 32
-testRunner.And("Access the submenu \" Input \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 33
-testRunner.When("I entered a valid email \"automacao@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Input \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 34
+testRunner.When("I entered a valid email \"automacao@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 35
 testRunner.Then("Validated email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -151,15 +151,15 @@ testRunner.Then("Validated email", ((string)(null)), ((TechTalk.SpecFlow.Table)(
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Select", new string[] {
                         "Form_Controls"});
-#line 38
-this.ScenarioSetup(scenarioInfo);
 #line 39
-testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 40
-testRunner.And("Access the submenu \" Select \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 41
-testRunner.When("I select the option \"Option 2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Select \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 42
+testRunner.When("I select the option \"Option 2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 43
 testRunner.Then("Valid the option selected \"option2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
