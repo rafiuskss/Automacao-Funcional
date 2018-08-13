@@ -39,7 +39,6 @@ namespace AutomacaoFuncional.tests.steps
         }
 
 
-
         [AfterStep]
         public static void AfterStep()
         {

@@ -32,7 +32,7 @@ namespace AutomacaoFuncional.tests.utils
 
             return false;
 
-        }
+        }       
 
         public void ScrollElementoPage(IWebElement element)
         {

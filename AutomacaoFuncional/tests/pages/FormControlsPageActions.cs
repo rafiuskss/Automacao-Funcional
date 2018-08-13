@@ -41,7 +41,7 @@ namespace AutomacaoFuncional.tests.pages
             try
             {
                 util.WaitForElementVisible(inputEmail, 10);
-                util.ScrollElementoPage(inputEmail);
+                util.ScrollElementoPage(divInputEmail);
                 inputEmail.Click();
                 inputEmail.SendKeys(arg);
                 Thread.Sleep(2000);
@@ -74,9 +74,10 @@ namespace AutomacaoFuncional.tests.pages
             try
             {
                 util.WaitForElementVisible(fieldSelect, 10);
+                util.ScrollElementoPage(divFieldSelect);
                 fieldSelect.Click();
                 Thread.Sleep(500);
-                ClassDriver.GetInstance().Driver.FindElement(By.XPath("//span(@class='mat-option-text' and text()='" + arg + "')")).Click();               
+                ClassDriver.GetInstance().Driver.FindElement(By.XPath("//span[@class='mat-option-text' and text()='" + arg + "']")).Click();               
                 Thread.Sleep(1000);
             }
             catch (Exception)
@@ -168,6 +169,7 @@ namespace AutomacaoFuncional.tests.pages
 
                 if (optionSelected.Text.Contains(arg))
                 {
+                    util.ScrollElementoPage(divFieldSelect);                    
                     _result = true;
                 }
                 else

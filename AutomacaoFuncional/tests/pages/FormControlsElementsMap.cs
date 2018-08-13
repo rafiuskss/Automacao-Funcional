@@ -13,9 +13,9 @@ namespace AutomacaoFuncional.tests.pages
         [FindsBy(How = How.ClassName, Using = "mat-option-text")]
         [CacheLookup]
         public IList<IWebElement> autocompleteOptions { get; set; }
-       
 
-        [FindsBy(How = How.XPath, Using = "//div[@class='autocomplete-filter'")]
+
+        [FindsBy(How = How.XPath, Using = "//div[@material-docs-example='autocomplete-filter']")]
         [CacheLookup]
         public IWebElement divAutocomplete { get; set; }
 
@@ -40,6 +40,11 @@ namespace AutomacaoFuncional.tests.pages
         public IWebElement inputEmail { get; set; }
 
 
+        [FindsBy(How = How.XPath, Using = "//div[@material-docs-example='input-error-state-matcher']")]
+        [CacheLookup]
+        public IWebElement divInputEmail { get; set; }
+
+
         [FindsBy(How = How.XPath, Using = "//div[@class='mat-form-field-subscript-wrapper']//mat-error")]
         [CacheLookup]
         public IWebElement alertErrorEmail { get; set; }
@@ -50,10 +55,15 @@ namespace AutomacaoFuncional.tests.pages
         public IWebElement fieldSelect { get; set; }
 
 
+        [FindsBy(How = How.XPath, Using = "//div[@material-docs-example='select-value-binding']")]
+        [CacheLookup]
+        public IWebElement divFieldSelect { get; set; }
+
+
         [FindsBy(How = How.XPath, Using = "//p[contains(text(),'You selected:')]")]
         [CacheLookup]
         public IWebElement optionSelected { get; set; }
 
-        
+
     }
 }

@@ -18,8 +18,8 @@ namespace AutomacaoFuncional.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("I-FunctionalTestFeature")]
-    public partial class I_FunctionalTestFeatureFeature
+    [NUnit.Framework.DescriptionAttribute("C-FunctionalTestFeature")]
+    public partial class C_FunctionalTestFeatureFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace AutomacaoFuncional.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "I-FunctionalTestFeature", "\tUse before title fiture separed with \"-\":\r\n\t \'C\' for Chrome;\r\n\t \'I\' for Internet" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "C-FunctionalTestFeature", "\tUse before title fiture separed with \"-\":\r\n\t \'C\' for Chrome;\r\n\t \'I\' for Internet" +
                     " Explorer;\r\n\t \'F\' for FireFox Mozilla;\r\n\t \'E\' for Edge;\r\n\t Default: Chrome", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -88,15 +88,15 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Autocomplete", new string[] {
                         "Form_Controls"});
-#line 15
-this.ScenarioSetup(scenarioInfo);
 #line 16
-testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 17
-testRunner.And("Access the submenu \" Autocomplete \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 18
-testRunner.When("I typed the letter \"T\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Autocomplete \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 19
+testRunner.When("I typed the letter \"T\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 20
 testRunner.Then("\"2\" options were displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -109,15 +109,15 @@ testRunner.Then("\"2\" options were displayed", ((string)(null)), ((TechTalk.Spe
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Datepicker", new string[] {
                         "Form_Controls"});
-#line 23
-this.ScenarioSetup(scenarioInfo);
 #line 24
-testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 25
-testRunner.And("Access the submenu \" Datepicker \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 26
-testRunner.When("Clicked on the calendar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Datepicker \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 27
+testRunner.When("Clicked on the calendar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 28
 testRunner.Then("Calendar opened successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -130,15 +130,15 @@ testRunner.Then("Calendar opened successfully", ((string)(null)), ((TechTalk.Spe
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Input", new string[] {
                         "Form_Controls"});
-#line 31
-this.ScenarioSetup(scenarioInfo);
 #line 32
-testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 33
-testRunner.And("Access the submenu \" Input \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 34
-testRunner.When("I entered a valid email \"automacao@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Input \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 35
+testRunner.When("I entered a valid email \"automacao@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 36
 testRunner.Then("Validated email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -151,16 +151,167 @@ testRunner.Then("Validated email", ((string)(null)), ((TechTalk.SpecFlow.Table)(
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Form Controls Select", new string[] {
                         "Form_Controls"});
-#line 39
-this.ScenarioSetup(scenarioInfo);
 #line 40
-testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 41
-testRunner.And("Access the submenu \" Select \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("Access the menu \" Form Controls \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 42
-testRunner.When("I select the option \"Option 2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("Access the submenu \" Select \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 43
+testRunner.When("I select the option \"Option 2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 44
 testRunner.Then("Valid the option selected \"option2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigation Menu")]
+        [NUnit.Framework.CategoryAttribute("Navigation")]
+        public virtual void NavigationMenu()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigation Menu", new string[] {
+                        "Navigation"});
+#line 48
+this.ScenarioSetup(scenarioInfo);
+#line 49
+testRunner.Given("Access the menu \" Navigation \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 50
+testRunner.And("Access the submenu \" Menu \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 51
+testRunner.When("I clicked the menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 52
+testRunner.Then("Options menus returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Layout Stepper")]
+        [NUnit.Framework.CategoryAttribute("Layout")]
+        public virtual void LayoutStepper()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Layout Stepper", new string[] {
+                        "Layout"});
+#line 56
+this.ScenarioSetup(scenarioInfo);
+#line 57
+testRunner.Given("Access the menu \" Layout \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 58
+testRunner.And("Access the submenu \" Stepper \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 59
+testRunner.When("I clicked the button enable linear mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 60
+testRunner.Then("Iten enebled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigation Buttons & Indicators Button Toogle")]
+        [NUnit.Framework.CategoryAttribute("Buttons_&_Indicators")]
+        public virtual void NavigationButtonsIndicatorsButtonToogle()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigation Buttons & Indicators Button Toogle", new string[] {
+                        "Buttons_&_Indicators"});
+#line 64
+this.ScenarioSetup(scenarioInfo);
+#line 65
+testRunner.Given("Access the menu \" Buttons & Indicators \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 66
+testRunner.And("Access the submenu \" Button toggle \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 67
+testRunner.When("I clicked the buttonToggle", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 68
+testRunner.Then("ButtonToggle selected", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigation Buttons & Indicators Chips")]
+        [NUnit.Framework.CategoryAttribute("Buttons_&_Indicators")]
+        public virtual void NavigationButtonsIndicatorsChips()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigation Buttons & Indicators Chips", new string[] {
+                        "Buttons_&_Indicators"});
+#line 72
+this.ScenarioSetup(scenarioInfo);
+#line 73
+testRunner.Given("Access the menu \" Buttons & Indicators \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 74
+testRunner.And("Access the submenu \" Chips \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 75
+testRunner.When("Insert new chips \"AUTOMACAO FUNCIONAL\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 76
+testRunner.Then("Chips inserted successfully the text \"AUTOMACAO FUNCIONAL\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigation Popups & Modals Dialog")]
+        [NUnit.Framework.CategoryAttribute("Popups_&_Modals")]
+        public virtual void NavigationPopupsModalsDialog()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigation Popups & Modals Dialog", new string[] {
+                        "Popups_&_Modals"});
+#line 80
+this.ScenarioSetup(scenarioInfo);
+#line 81
+testRunner.Given("Access the menu \" Popups & Modals  \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 82
+testRunner.And("Access the submenu \" Dialog \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 83
+testRunner.When("Insert the text \"AUTOMACAO FUNCIONAL\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 84
+testRunner.And("Click the button Pick one", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 85
+testRunner.Then("Dialog opened with the text \"AUTOMACAO FUNCIONAL\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigation Popups & Modals Snackbar")]
+        [NUnit.Framework.CategoryAttribute("Popups_&_Modals")]
+        public virtual void NavigationPopupsModalsSnackbar()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigation Popups & Modals Snackbar", new string[] {
+                        "Popups_&_Modals"});
+#line 89
+this.ScenarioSetup(scenarioInfo);
+#line 90
+testRunner.Given("Access the menu \" Popups & Modals  \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 91
+testRunner.And("Access the submenu \" Snackbar \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 92
+testRunner.When("Insert the message snack-bar \"AUTOMACAO FUNCIONAL\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 93
+testRunner.And("Click the button showsnack-bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 94
+testRunner.Then("Sneck-bar opened with the text \"AUTOMACAO FUNCIONAL\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Data Table Table")]
+        [NUnit.Framework.CategoryAttribute("Data_Table")]
+        public virtual void DataTableTable()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Data Table Table", new string[] {
+                        "Data_Table"});
+#line 98
+this.ScenarioSetup(scenarioInfo);
+#line 99
+testRunner.Given("Access the menu \" Data table \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 100
+testRunner.And("Access the submenu \" Table \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 101
+testRunner.When("click to change the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 102
+testRunner.Then("page changed successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
