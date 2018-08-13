@@ -33,6 +33,7 @@ C:\Users\Rafael Recalcatti\source\repos\Automacao-Funcional\AutomacaoFuncional\b
 C:\Users\Rafael Recalcatti\source\repos\Automacao-Funcional\AutomacaoFuncional\bin\Debug\WebDriver.xml
 C:\Users\Rafael Recalcatti\source\repos\Automacao-Funcional\AutomacaoFuncional\bin\Debug\WebDriver.Support.xml
 C:\Users\Rafael Recalcatti\source\repos\Automacao-Funcional\AutomacaoFuncional\bin\Debug\pt-BR\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Rafael Recalcatti\source\repos\Automacao-Funcional\AutomacaoFuncional\obj\Debug\AutomacaoFuncional.csprojResolveAssemblyReference.cache
 C:\Users\Rafael Recalcatti\source\repos\Automacao-Funcional\AutomacaoFuncional\obj\Debug\AutomacaoFuncional.csproj.CoreCompileInputs.cache
 C:\Users\Rafael Recalcatti\source\repos\Automacao-Funcional\AutomacaoFuncional\obj\Debug\AutomacaoFuncional.dll
 C:\Users\Rafael Recalcatti\source\repos\Automacao-Funcional\AutomacaoFuncional\obj\Debug\AutomacaoFuncional.pdb
