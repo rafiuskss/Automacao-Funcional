@@ -40,7 +40,7 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
-                util.WaitForElementVisible(inputNewChips, 10);
+                util.WaitForElementVisible(inputNewChips, 15);
 
                 if (inputNewChips.Enabled && inputNewChips.Displayed)
                 {

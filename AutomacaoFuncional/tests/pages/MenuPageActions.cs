@@ -25,12 +25,12 @@ namespace AutomacaoFuncional.tests.pages
                 if (menu.Displayed && menu.Enabled)
                 {
                     util.ScrollElementoPage(menu);
-                    menu.Click();
+                    util.ClickJS(menu);
                     Thread.Sleep(500);
                     
                     if (menu.GetAttribute("aria-expanded").Equals("false"))
                     {
-                        menu.Click();
+                        util.ClickJS(menu);
                     }
                 }
             }
@@ -50,7 +50,8 @@ namespace AutomacaoFuncional.tests.pages
                 if (subMenu.Displayed && subMenu.Enabled)
                 {
                     util.ScrollElementoPage(subMenu);
-                    subMenu.Click();                
+                    Thread.Sleep(500);
+                    util.ClickJS(subMenu);                
                 }
             }
             catch (Exception)

@@ -23,7 +23,7 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
-                util.WaitForElementVisible(inputNamePickOne, 10);
+                util.WaitForElementVisible(inputNamePickOne, 15);
 
                 if (inputNamePickOne.Enabled && inputNamePickOne.Displayed)
                 {
@@ -73,7 +73,7 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
-                util.WaitForElementVisible(inputTextSnackBar, 10);
+                util.WaitForElementVisible(inputTextSnackBar, 15);
 
                 if (inputTextSnackBar.Enabled && inputTextSnackBar.Displayed)
                 {
@@ -124,7 +124,7 @@ namespace AutomacaoFuncional.tests.pages
                 buttonShowSnackBar.Click();
 
                 Thread.Sleep(600);
-                util.WaitForElementVisible(insertedTextSnackBar, 5);
+                util.WaitForElementVisible(insertedTextSnackBar, 15);
                 if (insertedTextSnackBar.Enabled && insertedTextSnackBar.Displayed)
                 {                   
                     _result = true;

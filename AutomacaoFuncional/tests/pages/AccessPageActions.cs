@@ -36,7 +36,7 @@ namespace AutomacaoFuncional.tests.pages
             try
             {
 
-                util.WaitForElementVisible(menuHeaderHome, 10);
+                util.WaitForElementVisible(menuHeaderHome, 15);
 
                 if (menuHeaderHome.Enabled && menuHeaderHome.Displayed)
                 {                   

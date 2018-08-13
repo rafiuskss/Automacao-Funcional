@@ -37,7 +37,7 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
-                util.WaitForElementVisible(buttonEnableLinearMode, 10);
+                util.WaitForElementVisible(buttonEnableLinearMode, 15);
 
                 if (buttonEnableLinearMode.Enabled && buttonEnableLinearMode.Displayed)
                 {

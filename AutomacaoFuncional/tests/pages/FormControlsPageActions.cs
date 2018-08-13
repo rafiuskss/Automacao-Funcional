@@ -27,7 +27,7 @@ namespace AutomacaoFuncional.tests.pages
                 util.ScrollElementoPage(divAutocomplete);
                 autocompleteInput.Click();               
                 autocompleteInput.SendKeys(arg);
-                util.WaitForElementVisible(autocompleteOptions[0],5);
+                util.WaitForElementVisible(autocompleteOptions[0], 15);
                 Thread.Sleep(1000);
             }
             catch (Exception)
@@ -40,7 +40,7 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
-                util.WaitForElementVisible(inputEmail, 10);
+                util.WaitForElementVisible(inputEmail, 15);
                 util.ScrollElementoPage(divInputEmail);
                 inputEmail.Click();
                 inputEmail.SendKeys(arg);
@@ -56,7 +56,7 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
-                util.WaitForElementVisible(buttonOpenCalendar, 5);
+                util.WaitForElementVisible(buttonOpenCalendar, 15);
                 if (buttonOpenCalendar.Enabled && buttonOpenCalendar.Displayed)
                 {                    
                     buttonOpenCalendar.Click();
@@ -73,7 +73,7 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
-                util.WaitForElementVisible(fieldSelect, 10);
+                util.WaitForElementVisible(fieldSelect, 15);
                 util.ScrollElementoPage(divFieldSelect);
                 fieldSelect.Click();
                 Thread.Sleep(500);

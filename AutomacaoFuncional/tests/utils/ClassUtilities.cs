@@ -75,7 +75,7 @@ namespace AutomacaoFuncional.tests.utils
             try
             {
                 IJavaScriptExecutor js = ClassDriver.GetInstance().Driver as IJavaScriptExecutor;
-                js.ExecuteScript("arguments[0].Click()", element);
+                js.ExecuteScript("arguments[0].click()", element);
             }
             catch (Exception)
             {

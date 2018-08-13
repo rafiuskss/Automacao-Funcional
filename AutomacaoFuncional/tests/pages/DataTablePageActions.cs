@@ -22,7 +22,7 @@ namespace AutomacaoFuncional.tests.pages
         {
             try
             {
-                util.WaitForElementVisible(nextPageButton, 10);
+                util.WaitForElementVisible(nextPageButton, 15);
 
                 if (nextPageButton.Enabled && nextPageButton.Displayed)
                 {
@@ -42,7 +42,7 @@ namespace AutomacaoFuncional.tests.pages
             try
             {
 
-                util.WaitForElementVisible(nextPageIndicator, 10);
+                util.WaitForElementVisible(nextPageIndicator, 15);
 
                 if (nextPageIndicator.Enabled && nextPageIndicator.Displayed)
                 {
