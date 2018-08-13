@@ -259,7 +259,7 @@ testRunner.Then("Chips inserted successfully the text \"AUTOMACAO FUNCIONAL\"", 
 #line 80
 this.ScenarioSetup(scenarioInfo);
 #line 81
-testRunner.Given("Access the menu \" Popups & Modals  \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("Access the menu \" Popups & Modals \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 82
 testRunner.And("Access the submenu \" Dialog \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 83
@@ -282,7 +282,7 @@ testRunner.Then("Dialog opened with the text \"AUTOMACAO FUNCIONAL\"", ((string)
 #line 89
 this.ScenarioSetup(scenarioInfo);
 #line 90
-testRunner.Given("Access the menu \" Popups & Modals  \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("Access the menu \" Popups & Modals \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 91
 testRunner.And("Access the submenu \" Snackbar \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 92

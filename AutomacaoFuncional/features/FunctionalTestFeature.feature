@@ -78,7 +78,7 @@ Then Chips inserted successfully the text "AUTOMACAO FUNCIONAL"
 
 @Popups_&_Modals 
 Scenario: Navigation Popups & Modals Dialog
-Given Access the menu " Popups & Modals  "
+Given Access the menu " Popups & Modals "
 And Access the submenu " Dialog "
 When Insert the text "AUTOMACAO FUNCIONAL"
 And Click the button Pick one
@@ -87,7 +87,7 @@ Then Dialog opened with the text "AUTOMACAO FUNCIONAL"
 
 @Popups_&_Modals 
 Scenario: Navigation Popups & Modals Snackbar
-Given Access the menu " Popups & Modals  "
+Given Access the menu " Popups & Modals "
 And Access the submenu " Snackbar "
 When Insert the message snack-bar "AUTOMACAO FUNCIONAL"
 And Click the button showsnack-bar
@@ -99,4 +99,4 @@ Scenario: Data Table Table
 Given Access the menu " Data table "
 And Access the submenu " Table "
 When click to change the page
-Then page changed successfully 
+Then page changed successfully
